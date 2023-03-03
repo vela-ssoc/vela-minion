@@ -1,6 +1,7 @@
 package agtapi
 
 import (
+	"mime"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -21,6 +22,7 @@ type fmCtrl struct{}
 // Route 注册路由
 func (fc *fmCtrl) Route(arr, _ *ship.RouteGroupBuilder) {
 	arr.Route("/fm").
+		HEAD(fc.Browser).
 		GET(fc.Browser).
 		PUT(fc.Upload).
 		DELETE(fc.Delete)
@@ -52,6 +54,11 @@ func (fc *fmCtrl) Browser(c *ship.Context) error {
 	if stat, _ := open.Stat(); stat != nil && !stat.IsDir() {
 		fnm, mtime := stat.Name(), stat.ModTime()
 		res, req := c.ResponseWriter(), c.Request()
+		if req.Method != http.MethodHead {
+			params := map[string]string{"filename": fnm}
+			dis := mime.FormatMediaType("attachment", params)
+			res.Header().Set(ship.HeaderContentDisposition, dis)
+		}
 		http.ServeContent(res, req, fnm, mtime, open)
 		return nil
 	}

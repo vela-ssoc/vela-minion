@@ -11,12 +11,14 @@ import (
 	"github.com/xgfone/ship/v5"
 )
 
+// FM FileManager 文件管理模块
 func FM() regist.Router {
 	return new(fmCtrl)
 }
 
 type fmCtrl struct{}
 
+// Route 注册路由
 func (fc *fmCtrl) Route(arr, _ *ship.RouteGroupBuilder) {
 	arr.Route("/fm").GET(fc.Browser)
 }

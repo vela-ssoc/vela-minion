@@ -3,8 +3,8 @@ module github.com/vela-ssoc/vela-minion
 go 1.20
 
 require (
-	github.com/vela-ssoc/backend-common v0.0.0-20230301015722-9a40091d1b52
-	github.com/vela-ssoc/vela-tunnel v0.0.0-20230301022414-b64a7a230c6f
+	github.com/vela-ssoc/backend-common v0.0.0-20230303040846-e56358dcce7f
+	github.com/vela-ssoc/vela-tunnel v0.0.0-20230303041428-b87d3e33880a
 	github.com/xgfone/ship/v5 v5.3.1
 )
 

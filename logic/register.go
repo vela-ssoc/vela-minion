@@ -7,6 +7,7 @@ import (
 )
 
 func Register(tun tunnel.Tunneler, arr, aws *ship.RouteGroupBuilder) {
+	// fm FileManager 文件管理模块
 	fm := agtapi.FM()
 	fm.Route(arr, aws)
 }

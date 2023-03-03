@@ -20,7 +20,11 @@ type fmCtrl struct{}
 
 // Route 注册路由
 func (fc *fmCtrl) Route(arr, _ *ship.RouteGroupBuilder) {
-	arr.Route("/fm").GET(fc.Browser)
+	arr.Route("/fm").
+		GET(fc.Browser).
+		PUT(fc.Upload).
+		DELETE(fc.Delete)
+	arr.Route("/fm/mkdir").POST(fc.Mkdir)
 }
 
 // Browser 文件目录浏览
@@ -89,4 +93,29 @@ func (fc *fmCtrl) Browser(c *ship.Context) error {
 	}
 
 	return c.JSON(http.StatusOK, ret)
+}
+
+// Delete 删除文件
+func (fc *fmCtrl) Delete(c *ship.Context) error {
+	var r inout.FM
+	if err := c.BindQuery(&r); err != nil {
+		return err
+	}
+	if path := r.Path; path != "" {
+		return os.Remove(path)
+	}
+	return nil
+}
+
+func (fc *fmCtrl) Mkdir(c *ship.Context) error {
+	return nil
+}
+
+func (fc *fmCtrl) Upload(c *ship.Context) error {
+	var r inout.AddFile
+	if err := c.Bind(&r); err != nil {
+		return err
+	}
+
+	return nil
 }

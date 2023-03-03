@@ -4,11 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/vela-ssoc/vela-minion/logic"
-
 	"github.com/vela-ssoc/backend-common/logback"
 	"github.com/vela-ssoc/backend-common/netutil"
 	"github.com/vela-ssoc/backend-common/validate"
+	"github.com/vela-ssoc/vela-minion/logic"
 	"github.com/vela-ssoc/vela-tunnel"
 	"github.com/xgfone/ship/v5"
 )
@@ -23,7 +22,7 @@ func Run(parent context.Context, hide tunnel.Hide, slog logback.Logger) error {
 	if err != nil {
 		return err
 	}
-	slog.Infof("服务端连接认证成功")
+	slog.Infof("连接服务端 %s 成功", tun.BrkAddr())
 
 	name := tun.NodeName()
 	han := ship.Default()

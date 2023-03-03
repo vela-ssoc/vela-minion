@@ -33,5 +33,5 @@ func main() {
 	slog.Info("按 Ctrl+C 结束运行")
 
 	err := launch.Run(ctx, hide, slog)
-	slog.Warn("程序已结束运行：%v", err)
+	slog.Warnf("程序已结束运行：%v", err)
 }

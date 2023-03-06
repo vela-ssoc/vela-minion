@@ -7,12 +7,13 @@ import (
 	"github.com/vela-ssoc/backend-common/logback"
 	"github.com/vela-ssoc/backend-common/netutil"
 	"github.com/vela-ssoc/backend-common/validate"
+	"github.com/vela-ssoc/vela-kit/vela"
 	"github.com/vela-ssoc/vela-minion/logic"
 	"github.com/vela-ssoc/vela-tunnel"
 	"github.com/xgfone/ship/v5"
 )
 
-func Run(parent context.Context, hide tunnel.Hide, slog logback.Logger) error {
+func Run(parent context.Context, hide tunnel.Hide, env vela.Environment, slog logback.Logger) error {
 	ctx, cancel := context.WithCancel(parent)
 	defer cancel()
 
@@ -24,6 +25,7 @@ func Run(parent context.Context, hide tunnel.Hide, slog logback.Logger) error {
 	}
 	slog.Infof("连接服务端 %s 成功", tun.BrkAddr())
 
+	// 初始化 http.Handler
 	name := tun.NodeName()
 	han := ship.Default()
 	han.Logger = slog
@@ -31,10 +33,11 @@ func Run(parent context.Context, hide tunnel.Hide, slog logback.Logger) error {
 	han.HandleError = netutil.ErrorFunc(name)
 	han.Validator = validate.New()
 
-	group := han.Group("/api")
+	group := han.Group("/api/v1")
 	arr := group.Group("/arr")
 	aws := group.Group("/aws")
-	logic.Register(tun, arr, aws) // 注册业务逻辑
+
+	logic.Register(tun, env, arr, aws) // 注册业务逻辑
 
 	che := make(chan error, 1)
 	dt := &daemonTun{

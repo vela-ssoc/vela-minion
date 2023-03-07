@@ -4,224 +4,35 @@ go 1.20
 
 require (
 	github.com/gorilla/websocket v1.5.0
-	github.com/vela-ssoc/backend-common v0.0.0-20230306024113-562ebb3e9112
+	github.com/vela-ssoc/backend-common v0.0.0-20230307023248-3e8863dac7c6
 	github.com/vela-ssoc/vela-kit v1.2.6
 	github.com/vela-ssoc/vela-tunnel v0.0.0-20230306013511-0f6eafd45a5c
 	github.com/xgfone/ship/v5 v5.3.1
 )
 
 require (
-	github.com/22ke/gordp v1.5.1 // indirect
-	github.com/CycloneDX/cyclonedx-go v0.7.0 // indirect
-	github.com/Masterminds/goutils v1.1.1 // indirect
-	github.com/Masterminds/semver/v3 v3.2.0 // indirect
-	github.com/Masterminds/sprig/v3 v3.2.3 // indirect
-	github.com/Microsoft/go-winio v0.6.0 // indirect
-	github.com/StackExchange/wmi v1.2.1 // indirect
-	github.com/acobaugh/osrelease v0.1.0 // indirect
-	github.com/anchore/go-logger v0.0.0-20230120230012-47be9bb822a2 // indirect
-	github.com/anchore/go-macholibre v0.0.0-20220308212642-53e6d0aaf6fb // indirect
-	github.com/anchore/stereoscope v0.0.0-20230301191755-abfb374a1122 // indirect
-	github.com/andres-erbsen/clock v0.0.0-20160526145045-9e14626cd129 // indirect
-	github.com/andybalholm/brotli v1.0.5 // indirect
-	github.com/antchfx/htmlquery v1.3.0 // indirect
-	github.com/antchfx/xmlquery v1.3.15 // indirect
-	github.com/antchfx/xpath v1.2.4 // indirect
-	github.com/antihax/optional v1.0.0 // indirect
-	github.com/apache/thrift v0.18.1 // indirect
 	github.com/asdine/storm/v3 v3.2.1 // indirect
-	github.com/becheran/wildmatch-go v1.0.0 // indirect
-	github.com/bmatcuk/doublestar/v4 v4.6.0 // indirect
 	github.com/bytedance/sonic v1.8.3 // indirect
-	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
-	github.com/chzyer/readline v1.5.1 // indirect
-	github.com/containerd/containerd v1.6.19 // indirect
-	github.com/containerd/stargz-snapshotter/estargz v0.14.2 // indirect
-	github.com/coreos/go-systemd/v22 v22.5.0 // indirect
-	github.com/docker/cli v23.0.1+incompatible // indirect
-	github.com/docker/distribution v2.8.1+incompatible // indirect
-	github.com/docker/docker v23.0.1+incompatible // indirect
-	github.com/docker/docker-credential-helpers v0.7.0 // indirect
-	github.com/docker/go-connections v0.4.0 // indirect
-	github.com/docker/go-units v0.5.0 // indirect
-	github.com/dsnet/compress v0.0.2-0.20210315054119-f66993602bf5 // indirect
-	github.com/dustin/go-humanize v1.0.1 // indirect
-	github.com/elastic/gosigar v0.14.2 // indirect
-	github.com/facebookincubator/nvdtools v0.1.5 // indirect
-	github.com/fasthttp/router v1.4.17 // indirect
-	github.com/fsnotify/fsnotify v1.6.0 // indirect
-	github.com/gabriel-vasile/mimetype v1.4.1 // indirect
-	github.com/go-kit/kit v0.12.0 // indirect
-	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.11.2 // indirect
-	github.com/go-redis/redis v6.15.9+incompatible // indirect
-	github.com/go-restruct/restruct v1.2.0-alpha // indirect
-	github.com/godbus/dbus/v5 v5.1.0 // indirect
-	github.com/gogo/protobuf v1.3.2 // indirect
-	github.com/golang/glog v1.1.0 // indirect
-	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
-	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
-	github.com/google/go-cmp v0.5.9 // indirect
-	github.com/google/go-containerregistry v0.13.0 // indirect
-	github.com/google/gopacket v1.1.19 // indirect
-	github.com/google/uuid v1.3.0 // indirect
-	github.com/gosnmp/gosnmp v1.35.0 // indirect
-	github.com/hashicorp/errwrap v1.1.0 // indirect
-	github.com/hashicorp/go-multierror v1.1.1 // indirect
-	github.com/hashicorp/golang-lru v0.5.4 // indirect
-	github.com/huandu/xstrings v1.4.0 // indirect
-	github.com/huin/asn1ber v0.0.0-20120622192748-af09f62e6358 // indirect
-	github.com/icodeface/tls v0.0.0-20190904083142-17aec93c60e5 // indirect
-	github.com/imdario/mergo v0.3.13 // indirect
-	github.com/itchyny/gojq v0.12.12 // indirect
-	github.com/itchyny/timefmt-go v0.1.5 // indirect
-	github.com/jinzhu/copier v0.3.5 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
-	github.com/jlaffaye/ftp v0.1.0 // indirect
-	github.com/josharian/intern v1.0.0 // indirect
-	github.com/kardianos/service v1.2.2 // indirect
-	github.com/klauspost/compress v1.16.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.4 // indirect
-	github.com/klauspost/pgzip v1.2.5 // indirect
-	github.com/knqyf263/go-rpmdb v0.0.0-20230301153543-ba94b245509b // indirect
 	github.com/leodido/go-urn v1.2.2 // indirect
-	github.com/lestrrat-go/strftime v1.0.6 // indirect
-	github.com/lunixbochs/struc v0.0.0-20200707160740-784aaebc1d40 // indirect
-	github.com/mailru/easyjson v0.7.7 // indirect
-	github.com/mattn/go-runewidth v0.0.14 // indirect
-	github.com/mholt/archiver/v3 v3.5.1 // indirect
-	github.com/miekg/dns v1.1.51 // indirect
-	github.com/mitchellh/copystructure v1.2.0 // indirect
-	github.com/mitchellh/go-homedir v1.1.0 // indirect
-	github.com/mitchellh/hashstructure v1.1.0 // indirect
-	github.com/mitchellh/hashstructure/v2 v2.0.2 // indirect
-	github.com/mitchellh/mapstructure v1.5.0 // indirect
-	github.com/mitchellh/reflectwalk v1.0.2 // indirect
-	github.com/netxfly/mysql v1.0.3 // indirect
-	github.com/nwaples/rardecode v1.1.3 // indirect
-	github.com/nxadm/tail v1.4.8 // indirect
-	github.com/olekukonko/tablewriter v0.0.5 // indirect
-	github.com/oliveagle/jsonpath v0.0.0-20180606110733-2e52cf6e6852 // indirect
-	github.com/olivere/elastic/v7 v7.0.32 // indirect
-	github.com/opencontainers/go-digest v1.0.0 // indirect
-	github.com/opencontainers/image-spec v1.1.0-rc2 // indirect
-	github.com/opentracing/opentracing-go v1.2.0 // indirect
-	github.com/osquery/osquery-go v0.0.0-20220706183148-4e1f83012b42 // indirect
-	github.com/pelletier/go-toml v1.9.5 // indirect
-	github.com/pierrec/lz4/v4 v4.1.17 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
-	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/rivo/uniseg v0.4.4 // indirect
-	github.com/savsgio/gotils v0.0.0-20230208104028-c358bd845dee // indirect
-	github.com/scylladb/go-set v1.0.3-0.20200225121959-cc7b2070d91e // indirect
-	github.com/segmentio/kafka-go v0.4.39 // indirect
-	github.com/shirou/gopsutil v3.21.11+incompatible // indirect
-	github.com/shopspring/decimal v1.3.1 // indirect
-	github.com/sirupsen/logrus v1.9.0 // indirect
-	github.com/spdx/tools-golang v0.4.0 // indirect
-	github.com/spf13/afero v1.9.4 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
-	github.com/src-d/go-oniguruma v1.1.0 // indirect
-	github.com/stacktitan/smb v0.0.0-20190531122847-da9a425dceb8 // indirect
-	github.com/sylabs/sif/v2 v2.10.0 // indirect
-	github.com/sylabs/squashfs v0.6.1 // indirect
-	github.com/therootcompany/xz v1.0.1 // indirect
 	github.com/tidwall/pretty v1.2.1 // indirect
-	github.com/tklauser/go-sysconf v0.3.11 // indirect
-	github.com/tklauser/numcpus v0.6.0 // indirect
-	github.com/tredoe/osutil v1.0.6 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
-	github.com/ulikunitz/xz v0.5.11 // indirect
-	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	github.com/valyala/fasthttp v1.44.0 // indirect
-	github.com/valyala/fastjson v1.6.4 // indirect
-	github.com/valyala/fasttemplate v1.2.2 // indirect
-	github.com/valyala/tcplisten v1.0.0 // indirect
-	github.com/vbatts/go-mtree v0.5.2 // indirect
-	github.com/vbatts/tar-split v0.11.2 // indirect
-	github.com/vela-ssoc/vela-account v1.2.0 // indirect
-	github.com/vela-ssoc/vela-awk v1.2.0 // indirect
-	github.com/vela-ssoc/vela-capture v1.2.0 // indirect
-	github.com/vela-ssoc/vela-chameleon v1.2.0 // indirect
-	github.com/vela-ssoc/vela-component v0.0.0-20230203104608-b679637ff15d // indirect
-	github.com/vela-ssoc/vela-cond v1.2.0 // indirect
-	github.com/vela-ssoc/vela-console v1.2.0 // indirect
-	github.com/vela-ssoc/vela-cpu v1.2.0 // indirect
-	github.com/vela-ssoc/vela-crack v1.2.0 // indirect
-	github.com/vela-ssoc/vela-crontab v1.2.0 // indirect
-	github.com/vela-ssoc/vela-crypto v1.2.0 // indirect
-	github.com/vela-ssoc/vela-disk v1.2.0 // indirect
-	github.com/vela-ssoc/vela-dns v1.2.0 // indirect
-	github.com/vela-ssoc/vela-elastic v1.2.0 // indirect
-	github.com/vela-ssoc/vela-engine v1.2.0 // indirect
-	github.com/vela-ssoc/vela-evtlog v1.2.0 // indirect
-	github.com/vela-ssoc/vela-extract v1.2.0 // indirect
-	github.com/vela-ssoc/vela-fasthttp v1.2.1 // indirect
-	github.com/vela-ssoc/vela-file v1.2.0 // indirect
-	github.com/vela-ssoc/vela-fsnotify v1.2.0 // indirect
-	github.com/vela-ssoc/vela-group v1.2.0 // indirect
-	github.com/vela-ssoc/vela-host v1.2.0 // indirect
-	github.com/vela-ssoc/vela-ifconfig v1.2.0 // indirect
-	github.com/vela-ssoc/vela-ip2region v1.2.0 // indirect
-	github.com/vela-ssoc/vela-kfk v1.2.0 // indirect
-	github.com/vela-ssoc/vela-logon v1.2.0 // indirect
-	github.com/vela-ssoc/vela-memory v1.2.0 // indirect
-	github.com/vela-ssoc/vela-net v1.2.0 // indirect
-	github.com/vela-ssoc/vela-osquery v1.2.0 // indirect
-	github.com/vela-ssoc/vela-process v1.2.0 // indirect
-	github.com/vela-ssoc/vela-psnotify v1.2.0 // indirect
-	github.com/vela-ssoc/vela-registry v1.2.0 // indirect
-	github.com/vela-ssoc/vela-request v1.2.0 // indirect
-	github.com/vela-ssoc/vela-risk v1.2.0 // indirect
-	github.com/vela-ssoc/vela-sbom v1.2.1 // indirect
-	github.com/vela-ssoc/vela-service v1.2.0 // indirect
-	github.com/vela-ssoc/vela-ss v1.2.0 // indirect
-	github.com/vela-ssoc/vela-switch v1.2.0 // indirect
-	github.com/vela-ssoc/vela-syslog v1.2.0 // indirect
-	github.com/vela-ssoc/vela-tag v1.2.0 // indirect
-	github.com/vela-ssoc/vela-tail v1.2.0 // indirect
-	github.com/vela-ssoc/vela-time v1.2.0 // indirect
-	github.com/vela-ssoc/vela-track v1.2.0 // indirect
-	github.com/vela-ssoc/vela-wmi v1.2.0 // indirect
-	github.com/vifraa/gopom v0.2.1 // indirect
-	github.com/vishvananda/netlink v1.2.1-beta.2 // indirect
-	github.com/vishvananda/netns v0.0.4 // indirect
-	github.com/wagoodman/go-partybus v0.0.0-20210627031916-db1f5573bbc5 // indirect
-	github.com/wagoodman/go-progress v0.0.0-20230301185719-21920a456ad5 // indirect
-	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
-	github.com/yusufpapurcu/wmi v1.2.2 // indirect
 	go.etcd.io/bbolt v1.3.7 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
 	go.uber.org/multierr v1.9.0 // indirect
-	go.uber.org/ratelimit v0.2.0 // indirect
 	go.uber.org/zap v1.24.0 // indirect
 	golang.org/x/arch v0.3.0 // indirect
 	golang.org/x/crypto v0.7.0 // indirect
-	golang.org/x/mod v0.9.0 // indirect
-	golang.org/x/net v0.8.0 // indirect
-	golang.org/x/oauth2 v0.6.0 // indirect
-	golang.org/x/sync v0.1.0 // indirect
 	golang.org/x/sys v0.6.0 // indirect
 	golang.org/x/text v0.8.0 // indirect
-	golang.org/x/time v0.3.0 // indirect
-	golang.org/x/tools v0.6.0 // indirect
-	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
-	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20230303212802-e74f57abe488 // indirect
-	google.golang.org/grpc v1.53.0 // indirect
-	google.golang.org/protobuf v1.28.1 // indirect
-	gopkg.in/mcuadros/go-syslog.v2 v2.3.0 // indirect
-	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22 // indirect
-	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
-	gopkg.in/src-d/go-errors.v1 v1.0.0 // indirect
-	gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
-	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/gorm v1.24.6 // indirect
 )
 
